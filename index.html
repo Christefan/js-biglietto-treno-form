@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <div class="container">
+<body> 
+    <div class="container text-center">
 
-        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-        <div>
-            <div class="row">
+        <h1 class="text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <div class="bg-white py-3">
+            <div class="row py-3">
                 <div class="col">
                     <label for="utente">Nome Cognome</label>
                     <input type="text" id="userU" name="">
@@ -39,11 +40,45 @@
             </div>
         </div>
 
-        <div  class="container">
-            <h1>IL TUO BIGLIETTO</h1>
-                <h3 id="name"></h3>
-                <h3 id="price-ticket"> </h3>
-        </div>
+
+
+
+
+        
+        <section class="text-center">   
+            <h1 class="text-white">IL TUO BIGLIETTO</h1>
+            <div  class="container py-3">   
+                <div class="bg-white">
+                    <div class="row py-5">
+                        
+                        <div class="col-4 pb-5 ">
+                            <h3 class="mb-3">Nome Passeggero</h3>
+                            <p id="name-ticket"></p>
+                        </div>
+
+                        <div class="col pb-5">
+                            <h3 class="mb-3">Offerta</h3>
+                            <p id="discount-offer"></p>
+                        </div>
+                        <div class="col pb-5">
+                            <h3 class="mb-3">Carrozza</h3>
+                            <p id="car-number"></p>
+                        </div>
+                        <div class="col pb-5">
+                            <h3 class="mb-3">Codice CP</h3>
+                            <p id="codice-CP"></p>
+                        </div>
+                        <div class="col pb-5">
+                            <h3 class="mb-3">Costo biglietto</h3>
+                            <p id="price-ticket"></p>
+                        </div>
+                
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </section>    
     </div>
     <script src="js/script.js"></script>
 </body>
